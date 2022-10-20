@@ -1,0 +1,101 @@
+/*- Crear un programa que determine si un número introducido es divisible por 11 y 5 o no, 
+mostrar el resultado con console.log */
+
+//este programa compruba si un número es divisible por 11 y 5
+
+function divPorOnceYCinco(x){
+    var x; 
+    //numero que va a ingresar el usuario
+    if (x%11==0 && x%5==0){ 
+    //se comprueba con el resto si es divisible o no entre 11 y 5
+        console.log(x, " es divisible entre 11 y 5");
+    }else{
+        console.log(x, " no es diviseible entre 11 y 5");
+    }
+}
+divPorOnceYCinco(55);
+
+// Obtener edad
+    var edad;
+    if(edad < 13) {
+    console.log("Es niño");
+    }if(edad < 18 ){
+    console.log("Es adolecente");
+    } else{
+    console.log("Es adulto");
+    }
+    edad=20;
+
+/*Mostrar todos los números de 1 a n aumentando de 1 en 1 donde n se ingresa como
+número en la función*/
+
+function eneMasUno(n){
+    var x;
+    for (i=1; i<=n; i++){
+        console.log(i);
+        x=n+1;
+
+    }
+    return x;
+    console.log(x);
+
+}
+eneMasUno(3);
+
+/*Exercise #2
+Copy and paste the code below into a repl.it (set to Javascript).
+Make sure to run the program to understand what it currently outputs.
+Write test cases and fix the code according to the expected output.
+Output should be: Failed if they scored 6 or less Insufficient if they scored > 6 but less than 9. (9 included) Good if they scored > 9 but less than 14. (14 included) Excellent if they scored 15. Error if participants enter a negative number or a number outside the range supported (outside 0 - 15)
+*/
+
+/* ESTE TAMPOCO ME SALE :(*/
+
+function gradeLabel(grade) {
+    if (grade >= 0 && grade <= 6) {
+        console.log('Failed');
+    } else if (grade > 6 && grade <= 9) {
+        console.log('Insufficient');
+    } else if (grade > 9 && grade <= 14) {
+        console.log('Good');
+    } else if (grade <= 15 && grade>14) {
+        console.log('Excelent');
+    } else {
+        console.log("Error, outside of bounds");
+    }
+}
+gradeLabel(-2);
+gradeLabel(0);
+gradeLabel(2);
+gradeLabel(6);
+gradeLabel(8);
+gradeLabel(9);
+gradeLabel(12);
+gradeLabel(14);
+gradeLabel(15);
+gradeLabel(16);
+console.log('---------------------------');
+
+var x=0;
+function hastaN(n){
+    while(x<n){
+        x=x+1;
+        console.log(x);
+    }
+}
+hastaN(3);
+console.log('---------------------------');
+
+var x=0;
+function hastaNmenos1(n){
+    while(n>0){
+        x=n-(x-1);
+        console.log(x);
+        if (x==0){
+            break;
+
+        }
+      
+    }
+}
+hastaNmenos1(4);
