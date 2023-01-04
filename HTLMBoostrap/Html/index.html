@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Indice</title>
+</head>
+<body>
+    
+
+<!-- Header -->
+
+<h1>Encabezado</h1>
+<h3>Prueba de titulo</h3>
+<!--hr es linea horizontal-->
+<hr>
+<p>Bueno este debería ser un párrafo muy largo, <br> ellos usaron un verso pero yo lo quise escribir manualmente lo que  yo quisiera.</p>
+<p> <b>Así se escribe en negrita</b></p>
+<p><strong>Así se escribe un texto en negrita de relevancia, <br> ideal que sea una palabra.</strong></p>
+<p><i>Así se escribe para palabras en cursiva</i></p>
+<p><em>Así se escribe en cursiva de importancia</em></p>
+<p><small>Así se escribe un texto pequeño</small></p>
+<p><small><i><b>En negrita, cursiva y pequeño. Soy una genio.</b></i></small></p>
+
+<hr>
+<!--ol es lista ordenada, orden list, li es lista-->
+<ol>
+    <li>Abril</li>
+    <li>Alin</li>
+    <li>Lucas</li>
+    <li>Nicolas</li>
+    <li>Diego</li>
+</ol>
+
+<!--ul es lista desordenada, se puede meter una dentro de la otra-->
+<ul>
+    <li><b>Lunes</b></li>
+    <li>Martes</li>
+    <li>Miercoles</li>
+    <li>Jueves</li>
+    <ol>
+        <li>Abril</li>
+        <li>Alin</li>
+        <li>Lucas</li>
+        <li>Nicolas</li>
+        <li>Diego</li>
+    </ol>
+    <li>Viernes</li>
+
+</ul>
+
+<table border="1">
+    <tr> <!--Estas son columnas y las etiquetas de las mismas-->
+        <th>Lunes</th>
+        <th>Martes</th>
+        <th>Miercoles</th>
+        <th>Jueves</th>
+        <th>Viernes</th>
+    </tr>
+    <tr> <!--Así se insertan los datos-->
+        <td>Estudiar</td>
+        <td>Limpiar</td>
+        <td>Libre</td>
+        <td>Estudiar</td>
+        <td>Dormir</td>
+    </tr>
+    <tr style="color: rgb(0, 162, 255);"> <!--Mas datos-->
+        <td>Estudiar</td>
+        <td>Limpiar</td>
+        <td>Libre</td>
+        <td>Estudiar</td>
+        <td>Dormir</td>
+    </tr>
+</table>
+
+<img src="/img/Juego-de-Tronos.webp" alt="aún no se carga la imagen" width="500" height="350">
+
+<hr>
+
+<a href="https://www.figma.com/file/hWq8HJOb6jipiNMrbMTq92/CTM-team-library?node-id=761%3A420&t=e2mZvYQE20DFR2gp-0" target="_blank">Ir al figma</a><br>
+<a href="https://www.linkedin.com/in/abril-bracamonte-torrez-a9750a185/" target="_blank">Mi linkedIn</a><br>
+<a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox" target="_blank">Mi correo</a><br>
+<a href="index.html">Mi indice</a>
+
+<hr>
+
+<header style="background-color: black;"> <!--Sección del encabezado-->
+    <h1 style="color: white;">Encabezado de Página</h1>
+    <nav style="color: white;">Menu de navegación <!--Sección de la barra de navegación de la página-->
+        <a href="tablas.html">Tablas</a>
+        <a href="listas.html">Listas</a>
+        <a href="textos.html">Textos</a>
+    </nav>
+</header>
+
+<main style="background-color: rgb(248, 199, 107);"> <!--CUERPO PRINCIPAL DE LA PÁGINA-->
+    <p>Cuerpo de nuestra página</p>
+    <section style="background-color: pink;"> Una zona de la página
+        <div style="background-color: white;">
+            Una división de la página
+        </div>
+        <div style="background-color: rgb(0, 204, 255);">
+            <p style="color: yellow ;">Una división de la página</p>
+        </div>
+        <div style="background-color: red;">
+            Una división de la página
+        </div>
+        <div>
+            OTRA DIVISION DE LA PAGINA
+        </div>
+    </section>
+    <section>
+        <div>
+            OTRA SECCIÓN DE LA PÁGINA
+        </div>
+    </section>
+</main>
+
+<footer>
+    <h6>Pie de página</h6>
+</footer>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/vfJSdJ_M4Uw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+<hr>
+<form>
+    <label for="name">Nombre</label>
+    <input type="text" name="etiquetaNombre" id="name" placeholder="Ingresa tu nombre"> <br>
+    <label for="username">Usuario</label>
+    <input type="text" name="etiquetaUsuario" id="username" placeholder="Ingresa tu user"> <br>
+    <label for="rolunico">Rut</label>
+    <input type="number" name="etiquetaRut" id="rolunico" placeholder="Ingresa tu rut"> <br>
+    <label for="correo">Correo</label>
+    <input type="email" name="etiquetaCorreo" id="correo" placeholder="ejemplo@email.com"> <br>
+    <label for="clave">Clave</label>
+    <input type="password" name="etiquetaClave" id="clave" required placeholder="Ingresa tu clave"> <br>
+    <label for="fechaNac">Fecha Nacimiento</label>
+    <input type="date" name="etiquetaFechaNac" id="fechaNac" > <br>
+    <label for="comentario">Comentario</label><br>
+    <textarea rows="10" cols="35" id="comentario" name="comentario" maxlength="300" placeholder="Agrega un comentario..." ></textarea>
+
+    <hr>
+
+    <input type="checkbox" name="info" id="chbx-infocorreo">
+    <label for="chbx-infocorreo">Deseo recibir información por correo</label>
+    <br>
+    <input type="checkbox" name="info" id="chbx-infotelefono">
+    <label for="chbx-infotelefono">Deseo recibir información por teléfono</label>
+    <br>
+    <div style="background-color: aquamarine;">
+    <hr>
+    <label for="genero">Indique cómo desea que hagamos referencia a usted:</label>
+    <br>
+    <input type="radio" name="genero" id="femenino">Ella
+    <br>
+    <input type="radio" name="genero" id="masculino">Él
+    <br>
+    <input type="radio" name="genero" id="noBinario">Elle
+    <br>
+    </div>
+    
+    <div style="background-color: rgb(0, 204, 255);">
+        <hr>
+        <label for="comoNosConociste">¿Cómo te enteraste de nosotros?</label>
+        <select name="comoNosConociste" id="comoNosConociste">
+            <option value="Instagram">Por instagram</option>
+            <option value="Facebook">Por Facebook</option>
+            <option value="TikTok">Por Tiktok</option>
+            <option value="Amigo/Conocido">Por un amigo/conocido</option>
+         <option value="Otro">Otro medio</option>
+            </select>
+            <input type="submit" value="Enviar" name="btn-enviar">
+            <hr>
+    </div>
+
+    
+</form>
+</body>
+
+</html>

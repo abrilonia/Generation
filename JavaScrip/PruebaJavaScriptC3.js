@@ -48,7 +48,9 @@ function oferta2(array){
         var valor=array[i];
         if (array.length>2 && valor>10000){
             console.log("Este cliente merece un descuento del 5%");
-            console.log("------------------");
+            var venta = array.reduce((acum,valor)=>acum+valor);
+            var ventaDesc=venta*0.95;
+            console.log(ventaDesc);
 
 
         }
@@ -56,7 +58,7 @@ function oferta2(array){
     
 }
 
-oferta2([2000,5000,1500,500]);
+oferta2([2000,15000,1500,500]);
 
 /*Se desea tener una función verificadora encargada de revisar si dentro de el arreglo de
 valores de los productos a comprar no existan valores negativos ingresados por error,
@@ -64,21 +66,24 @@ en caso de no existir debe retornar un mensaje de éxito, en caso contrario debe
 un mensaje de error junto con el número negativo y el índice en el que se encontraba.*/
 
 function detectaNegativo(precios){
+
+    while(true){
     for (i=0; precios.length>i; i++){
 
         var elemento=precios[i];
 
         if (elemento<0){
         console.log("El precio ubicado en la posición " + precios.indexOf(elemento) + " del array y tiene un valor de " + elemento);
-    
-        } else{
-        console.log("Revisión exitosa");
-        console.log("------------------");
-        }
+            return false;
+        } 
+        
+    } 
+    console.log("Revisión exitosa");
 
-    }
+    return false;
+}       
 }
-detectaNegativo([100,200,-50,50,-500]);
+detectaNegativo([100,200,50,-500]);
 
 
 /*Dado el siguiente arreglo [200,5500,900,7000,500,300] con los valores de cada

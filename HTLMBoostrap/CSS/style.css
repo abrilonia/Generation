@@ -1,0 +1,46 @@
+/* Tipos de selectores para dar atributos */
+
+*{
+    background-color: black;
+}
+/* Para etiquetas */
+h1{
+    color: brown;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+h2{
+    color: orange;
+    text-align: right;
+}
+/* por clase */
+.subtitulo{
+
+    color: yellowgreen;
+    text-align: right;
+
+}
+
+p {
+    font-family: 'Courier New', Courier, monospace;
+    color: black;
+    background-color: cadetblue;    
+    border: 3px rgb(168, 97, 4) double;
+    width: 50% ;
+    text-align: justify;
+    margin: 40px;
+    margin-left: 300px;
+    padding: 2%;
+    
+}
+/* por id */
+#parrafoDos{
+    color: brown;
+    background-color: beige;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border-radius: 50%;
+    width: 20%;
+    border: 3px rgb(0, 255, 149) dotted;
+    margin-left: 50px;
+    text-align: center;
+    padding: 1%;
+}
